@@ -1,27 +1,25 @@
-# AngularDirective
+# Angular Directive (glow)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.6.
+An example of how to create an attribute directive with Anglar. The directive in
+this example (GlowDirective) is used to apply a CSS box-shadow to an element.
 
-## Development server
+The glow effect can be applied to elements in 2 ways, using the default colour (which is defined in the directive):
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+```
+<div glow>...</div>
+```
 
-## Code scaffolding
+or by providing a colour binding:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+```
+<div [glow]="colour">...</div>
+```
 
-## Build
+## Running Locally
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Clone the repo then run:
 
-## Running unit tests
+```
+ng serve
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
